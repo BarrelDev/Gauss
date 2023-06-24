@@ -17,7 +17,7 @@ void RobotContainer::ConfigureBindings() {
         m_drivetrain.TankDrive(-m_leftJoystick.GetY(), -m_rightJoystick.GetY(),
                                true);
       },
-      {&m_drivetrain}));
+      {&m_drivetrain})) //; purposeful error to test CI
 
   // Move neck with xbox joystick.
   m_arm.SetDefaultCommand(frc2::cmd::Run(
